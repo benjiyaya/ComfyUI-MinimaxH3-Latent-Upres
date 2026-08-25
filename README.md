@@ -92,7 +92,8 @@ This fork detects the new API at runtime and falls back to the two-argument form
 ## Install
 
 1. Place this folder into `ComfyUI/custom_nodes/`.
-2. Put your H3 latent upscaler checkpoint(s) into `ComfyUI/models/latent_upscale_models/` (e.g. `minimax_h3_latent_upscaler_3d_*.safetensors`). Model-free interpolation mode needs no checkpoint.
+2. **Model-based latent upscale** requires the H3 3D upscaler checkpoint. Download from [LBH-123-AI/Minimax_h3_latent_Upscaler](https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler) and place the `.safetensors` file into `ComfyUI/models/latent_upscale_models/` (e.g. `minimax_h3_latent_upscaler_3d_bf16.safetensors`).
+   - Model-free interpolation mode (`MMH3 Latent Upscale Params`) needs no checkpoint.
 3. **Restart ComfyUI fully.** After updating any custom node, kill the old ComfyUI process and start fresh — Python keeps the old module in memory until the process exits.
 
 ---
