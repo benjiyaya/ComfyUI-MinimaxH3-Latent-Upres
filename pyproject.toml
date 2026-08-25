@@ -1,0 +1,15 @@
+# pyproject.toml
+[project]
+name = "ComfyUI-MinimaxH3-Latent-Upres"
+description = "Upscale long, high-resolution MiniMax H3 video on any GPU in a single node. High-VRAM fast path, LRU model cache, tile progress, ComfyUI >= 0.33.0 compatible."
+version = "0.1.0"
+license = { file = "LICENSE" }
+dependencies  = []
+
+[project.urls]
+Repository = "https://github.com/benjiyaya/ComfyUI-MinimaxH3-Latent-Upres"
+
+[tool.comfy]
+PublisherId = "benjiyaya"
+DisplayName = "ComfyUI-MinimaxH3-Latent-Upres"
+Icon = ""
